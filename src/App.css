@@ -2,6 +2,11 @@ body {
   overflow-x: hidden;
 }
 
+ul,
+li {
+  display: block;
+}
+
 .noMarginPadding {
   margin: 0 !important;
   padding: 0 !important;
@@ -27,60 +32,55 @@ body {
   transition: 0.4s ease-in-out;
   position: relative;
 }
+.halfScreen:hover .overlay {
+  opacity: 1;
+  transition: all 0.4s;
+}
 
-.fullImg:hover {
+.halfScreen:hover .fullImg {
   transform: scale(1.1);
-  /* overflow: visible; */
-  /* height: 100%;
-  width: 100%; */
-  opacity: 0.5;
-  /* background: rgba(255,255,255,0); */
-  /* transition: all 1.5s; */
-  /* top: 0;
-  left: 0;
-  position: absolute; */
 }
 
- .fullImg:hover .classCars {
-  /* display: block; */
-  color: #fff;
-  transition: 0.3s ease-in-out;
-}
-
-.classCars {
-  color: #000;
-  object-fit: cover;
-  text-align: center;
-  padding-top: 85px;
+.overlay {
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
-  padding-left: 20px;
-  /* display: none; */
+  text-align: center;
+  padding-top: 100px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
 }
-/* 
-.fullImg:hover:after {
-  opacity: 1;
-  
-}
-
-.classCars
 
 .classCars {
+  color: #fff;
+  font-weight: 900;
+}
+
+.btnCars {
+  width: 125px;
+  height: 50px;
+  background-color: #fff;
   color: #000;
-  object-fit: cover;
-  text-align: center;
-  padding-top: 85px;
-  /* transition: 0.4s ease-in-out; */
-  /* overflow: hidden; */
-  /* z-index: 1; */
-  /* position: relative; */
-  /* font-weight: 900; */
-/* } */ 
+  font-weight: 600;
+  border-radius: 15px;
+}
 
+.carData {
+  padding: 10px 15px;
+}
 
+.space-between {
+  justify-content: space-between;
+}
 
+.timeRender {
+  margin-top: 10px;
+  margin-left: 400px;
+  justify-content: space-around;
+}
 
-
-
-
+.btnGo {
+  width: 110px;
+}
